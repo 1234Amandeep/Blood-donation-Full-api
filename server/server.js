@@ -27,7 +27,7 @@ mongoose.connect(process.env.DB_URI).then(() => {
   );
 });
 
-app.post("/form", formController);
+app.post("/", formController);
 
 app.delete("/all", deleteController);
 
